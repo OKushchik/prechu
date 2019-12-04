@@ -13,73 +13,83 @@
 .displayFlex {
      display: flex;
  }
-.menu li:hover {
+.header-menu {
+    display: flex;
+}
+.header-menu li:hover {
     border-bottom: 2px solid #5094f2;
 }
-.menu ul {
+.header-menu ul {
     list-style: none;
     display: flex;
 }
-.menu li {
+.header-menu li {
     padding: 15px;
 }
-.menu a {
+.header-menu a {
     text-decoration: none;
     color: #999999;
     font-size: 2vw;
     font-family: sans-serif;
 }
-.logo {
-    margin-top: 10px;
+.header-burgerMenu {
+    display:none;
 }
+.header-logo {
+    margin-top: 10px;
+    max-width: 50%;
+}
+.header-logo img{
+    margin-top: 10px;
+    width: 80%;
+}
+
 .slider {
     display: flex;
     width: 100%;
-    height: 490px;
+    max-height: 490px;
     overflow: hidden;
     background: url("../img/background-2.png") no-repeat;
     background-size: cover;
 }
-.arrow {
+.slider-arrow {
     margin-top: 11%;
 }
-.arrow button {
+.slider-arrow button {
     background: none;
     border: none;
 }
-.arrow:nth-child(1) {
+.slider-arrow:nth-child(1) {
     margin-left: 10%;
 }
-.arrow:nth-child(3) {
+.slider-arrow:nth-child(3) {
     margin-right: 10%;
 }
-.slider {
-    height: 100%;
-}
-.sliderImg {
+
+.slider-img {
     margin-left: 1em;
     margin-right: 1em;
 }
-.sliderImg img {
+.slider-img img {
     margin-top: 40px;
     width: 90%;
 }
-.sliderTitle {
+.slider-title {
     margin-left: 3vw;
 }
-.sliderTitle h2 {
+.slider-title h2 {
     margin-top: 20%;
     font-size: 3vw;
     font-family:"Segoe UI Light", sans-serif;
     color: white;
 }
-.sliderTitle p {
+.slider-title p {
     margin: 0;
     font-size: 2.5vw;
     font-family:"Segoe UI Light", sans-serif;
     color: white;
 }
-.sliderTitle button {
+.slider-title button {
     margin-top: 30px;
     color: white;
     background: #5094f2;
@@ -87,10 +97,10 @@
     width: 15vw;
     font-size: 2vw;
 }
-.sliderTitle button:hover {
+.slider-title button:hover {
    border: 2px solid grey;
 }
-.sliderTitle i {
+.slider-title i {
     padding-right: 10px;
 }
 .items {
@@ -107,7 +117,7 @@
 .items img {
     display: block;
     margin: 0 auto;
-    width: 15vw;
+    width: 10vw;
 }
 .items h3 {
     color: #5094f2;
@@ -117,7 +127,7 @@
 .items p {
     font-family:"Segoe UI Light", sans-serif;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .content {
     display: flex;
@@ -128,25 +138,25 @@
     font-size: 3vw;
     text-align: center;
 }
-.contentImg {
+.content-img {
     width: 50%;
     margin-top: 30px;
 }
-.contentImg img {
+.content-img img {
     display: block;
     margin: 0 auto;
     width: 80%;
 }
-.contentText {
+.content-text {
     margin-top: 50px;
     width: 50%;
 }
-.contentText h4 {
+.content-text h4 {
     color: #6f7173;
     font-family:"Segoe UI Light", sans-serif;
     font-size: 30px;
 }
-.contentText p {
+.content-text p {
     color: #6f7173;
     font-family:"Segoe UI Light", sans-serif;
     font-size: 20px;
@@ -161,10 +171,10 @@ footer p {
     .content {
         display: block;
     }
-    .contentImg{
+    .content-img{
         margin: 0 auto;
     }
-    .contentText {
+    .content-text {
         width: 100%;
     }
 }
@@ -172,49 +182,53 @@ footer p {
     .wrapper {
         width: 90%;
     }
-    .forRespons {
+    .header-burgerMenu {
+        display: block;
+    }
+    .item-title {
         margin-left: 5%;
         width: 60%;
     }
-    .forResponsImg {
+    .items-img {
         width: 40%;
     }
-    .forResponsImg img {
+    .items-img img {
         margin-top: 5%;
         width: 80%;
     }
     .items ul {
         display: block;
-        margin: 0 auto;
+        margin: 0 ;
+        padding: 0;
     }
     .items li {
         display: flex;
-        margin: 10px auto;
+        margin: 10px 0;
         width: 100%;
     }
     .items P{
         font-size: 3vw;
     }
-    .arrow {
+    .slider-arrow {
         display: none;
     }
-    .menu {
+    .header-menu {
         display: none;
     }
     .sliderTitle {
         width: 100%;
     }
-    .sliderTitle h2{
+    .slider-title h2{
         margin-top: 20%;
         font-size: 5vw;
     }
-    .sliderTitle p {
+    .slider-title p {
         font-size: 4vw;
     }
-    .sliderImg {
+    .slider-img {
         width: 80%;
     }
-    .sliderTitle button {
+    .slider-title button {
         margin-top: 5%;
         width: 30vw;
         font-size: 4vw;
@@ -222,5 +236,31 @@ footer p {
     .content h3 {
         font-size: 5vw;
     }
+    .header {
+        justify-content: space-between;
+    }
+    .header-menuBurger {
+        display:block;
+    }
+    .header-menuBurger ul {
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
 
+    }
+    .header-menuBurger li {
+        padding: 4px;
+    }
+    .headerWrap {
+        display: flex;
+    }
+    .header-menu a {
+        font-size: 4vw;
+    }
+    .header-burgerMenu {
+        display: block;
+        width: 4vw;
+        font-size: 6vw;
+    }
 }
