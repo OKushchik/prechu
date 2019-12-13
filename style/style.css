@@ -11,35 +11,36 @@
     margin: 0 auto;
 }
 .displayFlex {
-     display: flex;
- }
-.header-menu {
+    display: flex;
+    justify-content: center;
+}
+.headerWrap__menu {
     display: flex;
 }
-.header-menu li:hover {
+.headerWrap__menu li:hover {
     border-bottom: 2px solid #5094f2;
 }
-.header-menu ul {
+.headerWrap__menu ul {
     list-style: none;
     display: flex;
 }
-.header-menu li {
+.headerWrap__menu li {
     padding: 15px;
 }
-.header-menu a {
+.headerWrap__menu a {
     text-decoration: none;
     color: #999999;
     font-size: 2vw;
     font-family: sans-serif;
 }
-.header-burgerMenu {
+.headerWrap__burgerMenu {
     display:none;
 }
-.header-logo {
+.header__logo {
     margin-top: 10px;
     max-width: 50%;
 }
-.header-logo img{
+.header__logo img{
     margin-top: 10px;
     width: 80%;
 }
@@ -52,55 +53,55 @@
     background: url("../img/background-2.png") no-repeat;
     background-size: cover;
 }
-.slider-arrow {
+.slider__arrow {
     margin-top: 11%;
 }
-.slider-arrow button {
+.slider__arrow button {
     background: none;
     border: none;
 }
-.slider-arrow:nth-child(1) {
+.slider__arrow:nth-child(1) {
     margin-left: 10%;
 }
-.slider-arrow:nth-child(3) {
+.slider__arrow:nth-child(3) {
     margin-right: 10%;
 }
 
-.slider-img {
+.slider__contain-img {
     margin-left: 1em;
     margin-right: 1em;
 }
-.slider-img img {
+.slider__contain-img img {
     margin-top: 40px;
     width: 90%;
 }
-.slider-title {
+.slider__contain-title {
     margin-left: 3vw;
 }
-.slider-title h2 {
+.slider__contain-title h2 {
     margin-top: 20%;
-    font-size: 3vw;
+    font-size: 35px;
     font-family:"Segoe UI Light", sans-serif;
     color: white;
 }
-.slider-title p {
+.slider__contain-title p {
     margin: 0;
-    font-size: 2.5vw;
+    font-size: 30px;
     font-family:"Segoe UI Light", sans-serif;
     color: white;
 }
-.slider-title button {
+.slider__contain-title button {
     margin-top: 30px;
     color: white;
     background: #5094f2;
     border: none;
-    width: 15vw;
-    font-size: 2vw;
+    width: 250px;
+    font-size: 30px;
 }
-.slider-title button:hover {
-   border: 2px solid grey;
+.slider__contain-title button:hover {
+    border: 2px solid grey;
 }
-.slider-title i {
+.slider__contain-title i {
     padding-right: 10px;
 }
 .items {
@@ -135,28 +136,28 @@
 .content h3 {
     color: #6f7173;
     font-family:"Segoe UI Light", sans-serif;
-    font-size: 3vw;
+    font-size: 24px;
     text-align: center;
 }
-.content-img {
+.content__img {
     width: 50%;
     margin-top: 30px;
 }
-.content-img img {
+.content__img img {
     display: block;
     margin: 0 auto;
     width: 80%;
 }
-.content-text {
+.content__text {
     margin-top: 50px;
     width: 50%;
 }
-.content-text h4 {
+.content__text h4 {
     color: #6f7173;
     font-family:"Segoe UI Light", sans-serif;
     font-size: 30px;
 }
-.content-text p {
+.content__text p {
     color: #6f7173;
     font-family:"Segoe UI Light", sans-serif;
     font-size: 20px;
@@ -171,10 +172,10 @@ footer p {
     .content {
         display: block;
     }
-    .content-img{
+    .content__img{
         margin: 0 auto;
     }
-    .content-text {
+    .content__text {
         width: 100%;
     }
 }
@@ -182,17 +183,17 @@ footer p {
     .wrapper {
         width: 90%;
     }
-    .header-burgerMenu {
+    .headerWrap__burgerMenu {
         display: block;
     }
-    .item-title {
+    .item__title {
         margin-left: 5%;
         width: 60%;
     }
-    .items-img {
+    .items__img {
         width: 40%;
     }
-    .items-img img {
+    .items__img img {
         margin-top: 5%;
         width: 80%;
     }
@@ -209,26 +210,26 @@ footer p {
     .items P{
         font-size: 3vw;
     }
-    .slider-arrow {
+    .slider__arrow {
         display: none;
     }
-    .header-menu {
+    .headerWrap__menu {
         display: none;
     }
     .sliderTitle {
         width: 100%;
     }
-    .slider-title h2{
+    .slider__contain-title h2{
         margin-top: 20%;
         font-size: 5vw;
     }
-    .slider-title p {
+    .slider__contain-title p {
         font-size: 4vw;
     }
-    .slider-img {
+    .slider__contain-img {
         width: 80%;
     }
-    .slider-title button {
+    .slider__contain-title button {
         margin-top: 5%;
         width: 30vw;
         font-size: 4vw;
@@ -255,10 +256,10 @@ footer p {
     .headerWrap {
         display: flex;
     }
-    .header-menu a {
+    .headerWrap__menu a {
         font-size: 4vw;
     }
-    .header-burgerMenu {
+    .headerWrap__burgerMenu {
         display: block;
         width: 4vw;
         font-size: 6vw;
